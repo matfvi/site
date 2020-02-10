@@ -1,0 +1,36 @@
+<nav id="the-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <div class="container-fluid navbar-container">
+            <img class='img-glow' style='height: 40px; border-radius: 100px' alt='navbar-brand' src="images/logo-transparent.png">
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {% for navitem in site.data.navitems %}
+            {% if navitem.visible %}
+            <li class='{% if page.active == navitem.active %}active glow{% endif %} nav-item'>
+                <a class='nav-link' href="{{navitem.url}}">
+                    <i class='{{navitem.iconclasses}}'></i>
+                    {{ navitem.name }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="divider"></li>
+            {% for socialitem in site.data.social %}
+            <li class="nav-item">
+                <a target="_blank" href="{{socialitem.url}}" class="nav-link">
+                    {{socialitem.navicon}}
+                    <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">{{socialitem.name | capitalize}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

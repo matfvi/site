@@ -1,0 +1,15 @@
+- name: github
+  url: https://github.com/matfvi
+  navicon: <i class="fab fa-lg fa-github"></i>
+  iconname: github
+  awesome-icons: dark-icon fab fa-lg fa-github
+- name: matf
+  url: http://www.matf.bg.ac.rs/
+  navicon: <i class="fas fa-lg fa-university"></i>
+  iconname: university
+  awesome-icons: dark-icon fab fa-lg fa-university
+- name: raspored
+  url: http://poincare.matf.bg.ac.rs/~kmiljan/raspored/sve/
+  navicon: <i class="fas fa-lg fa-calendar"></i>
+  iconname: calendar
+  awesome-icons: dark-icon fab fa-lg fa-calendar

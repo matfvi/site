@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'TheTerminus';
+    src: url('./../fonts/TerminusMedium-Powerline.ttf');
+}
+
+@font-face {
+    font-family: 'Neon';
+    src: url('./../fonts/Neon.ttf');
+}
+
+body {
+    font-family: 'TheTerminus', monospace;
+    /*font-family: 'TheTerminus', monospace;*/
+    padding-top: 100px;
+}
+
+footer {
+    border-top: 1px solid #714cdf;
+    background-color: #0c0d16dd;
+}
+
+.dragonFooter {
+    /*background-color: #222222;*/
+    height: 60px;
+    line-height: 60px;                  /* vertical align text */
+    text-align: center;                 /* horizontal align text */
+}
+
+.centerText {
+    text-align: center;
+}
+
+#the-navbar {
+    background-color: #0c0d16dd;
+    border-bottom: 1px solid #714cdf;
+    border-radius: 3px;
+    /*-webkit-backdrop-filter: blur(500px);*/
+}
+
+.the-blur{
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.4);
+    z-index:1010;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+/* A glow around image */
+.img-glow {
+    box-shadow: 0px 0px 20px #714cdf;
+}
+
+/* The beautiful glow effect around text */
+.glow {
+    /*font-size: 80px;*/
+    color: #fff;
+    /*text-align: center;*/
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+/* SMALL GLOW animation */
+.small-glow {
+    /*font-size: 80px;*/
+    color: #fff;
+    /*text-align: center;*/
+    -webkit-animation: small-glow 1s ease-in-out infinite alternate;
+    -moz-animation: small-glow 1s ease-in-out infinite alternate;
+    animation: small-glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes small-glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    }
+}
+
+/* Default item color */
+.navbar-dark .navbar-nav .nav-link {
+    /*color: red;*/
+    /*color: #32334a;*/
+    color: #714cdf;
+}
+
+/* The active item color  */
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    /*color: #714cdf;*/
+    color: #ffffff;
+}
+
+/* The hover color for navbar item */
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    /*color: #475297;*/
+    color: #b948be;
+    /*color: #ccc !important;*/
+}
+

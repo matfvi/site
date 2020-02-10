@@ -1,0 +1,18 @@
+- url: index.html
+  name: Početna
+  active: home
+  icon: <i class="fas fa-home"></i>
+  iconclasses: fas fa-home
+  visible: true
+- url: materijali.html
+  name: Materijali
+  active: vi
+  icon: <i class="fas fa-robot"></i>
+  iconclasses: fas fa-robot
+  visible: true
+- url: http://machinelearning.math.rs/
+  name: MLA
+  active: mla
+  icon: <i class="fas fa-brain"></i>
+  iconclasses: fas fa-brain
+  visible: true

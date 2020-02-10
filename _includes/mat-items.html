@@ -1,0 +1,25 @@
+<h4>Vežbe</h4>
+
+<div id="accordion">
+    {% for matitem in site.posts reversed %}
+    {% if matitem.category == include.tag %}
+<!--    ht-tm-element card border-primary mb-3 text-center-->
+    <div class="card border-primary mb-2">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#{{ matitem.mid }}" aria-expanded="false" aria-controls="{{ matitem.mid }}">
+                    {{ matitem.title }}
+                </button>
+            </h5>
+        </div>
+
+        <div id="{{ matitem.mid }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                {{ matitem.content }}
+            </div>
+        </div>
+    </div>
+<!--    <br>-->
+    {% endif %}
+    {% endfor %}
+</div>

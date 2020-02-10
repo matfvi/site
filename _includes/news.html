@@ -1,0 +1,32 @@
+<div id="accordion">
+    <!--    ht-tm-element card border-primary mb-3 text-center-->
+    <div class="card border-primary mb-2">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#thenews" aria-expanded="true" aria-controls="thenews">
+                    Vesti
+                </button>
+            </h5>
+        </div>
+
+        <div id="thenews" class="collapse show collapse-show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="ht-tm-codeblock">
+                <ul class="list-group ht-tm-element">
+                    {% for news in site.posts %}
+                    {% if news.category == include.tag %}
+                    <li class="list-group-item">
+                        <h5>
+                            [<span class="archBlueColor">{{ news.groups }}</span>] {{ news.title }}
+                        </h5>
+                        {{ news.content }}
+
+                        <p class="dateStyle">{{ news.date | date: '%B %d, %Y' }}</p>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    <br>-->
+</div>
