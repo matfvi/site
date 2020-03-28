@@ -4,8 +4,14 @@
   icon: <i class="fas fa-home"></i>
   iconclasses: fas fa-home
   visible: true
-- url: materijali.html
-  name: Materijali
+- url: predavanja.html
+  name: Predavanja
+  active: predavanja
+  icon: <i class="fas fa-robot"></i>
+  iconclasses: fas fa-book
+  visible: true
+- url: vezbe.html
+  name: Vežbe
   active: vi
   icon: <i class="fas fa-robot"></i>
   iconclasses: fas fa-robot

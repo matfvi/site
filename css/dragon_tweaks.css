@@ -8,6 +8,11 @@
     src: url('./../fonts/Neon.ttf');
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'TheTerminus', monospace;
     /*font-family: 'TheTerminus', monospace;*/
@@ -37,7 +42,7 @@ footer {
     /*-webkit-backdrop-filter: blur(500px);*/
 }
 
-.the-blur{
+.the-blur {
     position: fixed;
     top:0;
     width: 100%;
