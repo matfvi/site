@@ -19,7 +19,8 @@
         <div class="col-md-10">
             <!-- The beautiful title -->
             <div class="text-center">
-                <h1>{{ page.title }}<span class="vim-caret">{{ page.title_letter }}</span></h1>
+                {% assign thesize = page.title | size | minus: 1 %}
+                <h1>{{ page.title | slice: 0, thesize }}<span class="vim-caret">{{ page.title | slice: -1 }}</span></h1>
                 <div class="lead mb-3 text-mono">{{ page.subtitle }}</div>
                 <span class="ht-tm-element hal-9000 d-block mx-auto mb-3 mt-3"></span>
             </div>
