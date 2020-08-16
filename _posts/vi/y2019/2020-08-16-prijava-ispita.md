@@ -11,6 +11,8 @@ olakšavate organizaciju samog ispita.
 
 Anketa je otvorena do 18. avgusta 18:00.
 
+Maske na ispitu su **obavezne**!
+
 Satnica za ispit:
 - 13-14h teorijski deo
 - 14-16h praktični deo
