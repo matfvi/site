@@ -1,10 +1,12 @@
 <nav id="the-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">
         <div class="container-fluid navbar-container">
-            <img class='img-glow' style='height: 40px; border-radius: 100px' alt='navbar-brand' src="images/logo-transparent.png">
+            <img class='img-glow' style='height: 40px; border-radius: 100px' alt='navbar-brand'
+                src="images/logo-transparent.png">
         </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -27,7 +29,8 @@
             <li class="nav-item">
                 <a target="_blank" href="{{socialitem.url}}" class="nav-link">
                     {{socialitem.navicon}}
-                    <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">{{socialitem.name | capitalize}}</span>
+                    <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">{{socialitem.name |
+                        capitalize}}</span>
                 </a>
             </li>
             {% endfor %}
