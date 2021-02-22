@@ -16,6 +16,12 @@
   icon: <i class="fas fa-robot"></i>
   iconclasses: fas fa-robot
   visible: true
+- url: http://argo.matf.bg.ac.rs/
+  name: ARGO
+  active: argo
+  icon: <i class="fas fa-font"></i>
+  iconclasses: fas fa-font
+  visible: true
 - url: http://machinelearning.math.rs/
   name: MLA
   active: mla
